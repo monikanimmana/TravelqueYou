@@ -1,62 +1,143 @@
 <div align="center">
 
-# ✈️ TraviqueYou
+<img src="https://img.shields.io/badge/TraviqueYou-AI%20Travel%20Platform-FF6B35?style=for-the-badge&logoColor=white" alt="TraviqueYou"/>
 
-**AI-powered travel planning platform with an intelligent assistant, RAG-based recommendations, and full async infrastructure — built solo, end to end.**
+<br/>
+<br/>
 
-[![Live Backend](https://img.shields.io/badge/Backend-Railway-6366f1?style=flat-square&logo=railway)](https://railway.app)
-[![Live Frontend](https://img.shields.io/badge/Frontend-Netlify-00C7B7?style=flat-square&logo=netlify)](https://netlify.com)
-[![Django](https://img.shields.io/badge/Django-5.x-092E20?style=flat-square&logo=django)](https://djangoproject.com)
-[![React](https://img.shields.io/badge/React-18-61DAFB?style=flat-square&logo=react)](https://reactjs.org)
-[![PostgreSQL](https://img.shields.io/badge/PostgreSQL+pgvector-blue?style=flat-square&logo=postgresql)](https://postgresql.org)
-[![Docker](https://img.shields.io/badge/Docker-Compose-2496ED?style=flat-square&logo=docker)](https://docker.com)
+**AI-powered travel planning platform — built solo, end to end.**
+<br/>
+*Plan trips, build itineraries, manage budgets, and chat with Shiro — your personal AI travel companion.*
+
+<br/>
+
+[![Django](https://img.shields.io/badge/Django-092E20?style=flat-square&logo=django&logoColor=white)](https://djangoproject.com)
+[![DRF](https://img.shields.io/badge/Django_REST_Framework-092E20?style=flat-square&logo=django&logoColor=white)](https://django-rest-framework.org)
+[![React](https://img.shields.io/badge/React_18-20232A?style=flat-square&logo=react&logoColor=61DAFB)](https://reactjs.org)
+[![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white)](https://tailwindcss.com)
+[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=flat-square&logo=postgresql&logoColor=white)](https://postgresql.org)
+[![Redis](https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white)](https://redis.io)
+[![Celery](https://img.shields.io/badge/Celery-37814A?style=flat-square&logo=celery&logoColor=white)](https://docs.celeryq.dev)
+[![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)](https://docker.com)
+[![Google Gemini](https://img.shields.io/badge/Google_Gemini-4285F4?style=flat-square&logo=google&logoColor=white)](https://ai.google.dev)
+[![Railway](https://img.shields.io/badge/Railway-0B0D0E?style=flat-square&logo=railway&logoColor=white)](https://railway.app)
+[![Netlify](https://img.shields.io/badge/Netlify-00C7B7?style=flat-square&logo=netlify&logoColor=white)](https://netlify.com)
+[![JWT](https://img.shields.io/badge/JWT-000000?style=flat-square&logo=jsonwebtokens&logoColor=white)](https://jwt.io)
 [![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)](LICENSE)
 
-[Live Demo](#) · [API Docs](#api-documentation) · [Report Bug](https://github.com/monikanimmana/traviqueyou/issues)
+<br/>
+
+[🚀 Live Demo](#) &nbsp;·&nbsp; [📖 API Docs](#api-documentation) &nbsp;·&nbsp; [🐛 Report Bug](https://github.com/monikanimmana/traviqueyou/issues) &nbsp;·&nbsp; [💡 Request Feature](https://github.com/monikanimmana/traviqueyou/issues)
 
 </div>
 
 ---
 
-## About
+## 📸 Screenshots
 
-TraviqueYou is a full-stack AI travel planning platform I built from scratch as a solo project. The core feature is **Shiro** — an AI assistant powered by Google Gemini and Retrieval-Augmented Generation (RAG) via pgvector — which gives personalised travel recommendations based on user preferences and conversation history.
+### Dashboard
+![Dashboard](screenshot_dashboard.png)
 
-The platform covers the full lifecycle of trip planning: destination discovery, itinerary building, bookings, reviews, and async notifications — across 9 modules and 12 database tables, with a containerised deployment on Railway (backend) and Netlify (frontend).
+### My Trips
+![My Trips](screenshot_mytrips.png)
+
+### Destinations — Explore the World
+![Destinations](screenshot_destinations.png)
+
+### Itinerary Builder
+![Itinerary](screenshot_itinerary.png)
+
+### Budget Tracker
+![Budget](screenshot_budget.png)
+
+### Shiro — AI Travel Companion
+![Shiro AI](screenshot_shiro.png)
+
+### Packing Checklist
+![Packing](screenshot_packing.png)
 
 ---
 
-## Features
+## 🧭 About
 
-- **Shiro AI Assistant** — Gemini-powered conversational travel assistant with RAG via pgvector for context-aware, personalised recommendations
-- **JWT Authentication** — Secure access and refresh token flow using Django SimpleJWT
-- **Async Task Processing** — Celery + Redis for background jobs: email notifications, embedding generation, scheduled tasks
-- **Trip & Itinerary Builder** — Day-by-day itinerary planning with destinations, activities, and notes
-- **Bookings & Reviews** — End-to-end booking management and review system
-- **Destination Discovery** — Searchable destination catalogue with tags and filters
-- **Notifications** — Real-time and async notification delivery
-- **Docker Compose** — Full local dev environment with one command
-- **Production Deployment** — Railway (API) + Netlify (frontend), environment-split Django settings
+**TraviqueYou** is a full-stack AI travel planning platform built from scratch as a solo project. The highlight is **Shiro** — an AI assistant powered by Google Gemini and Retrieval-Augmented Generation (RAG) via `pgvector` — that gives personalised travel recommendations based on your preferences and conversation history.
+
+The platform covers the full lifecycle of trip planning: destination discovery, itinerary building, budget tracking, packing checklists, bookings, and async notifications — across **9 modules** and **12 database tables**, containerised with Docker Compose and deployed on Railway (backend) + Netlify (frontend).
+
+> Built entirely solo. No team. No boilerplate starter kits. Every layer — from the RAG pipeline to the React frontend — was designed, coded, and deployed by me.
 
 ---
 
-## Tech Stack
+## ✨ Features
 
-| Layer | Technology |
+| Module | What it does |
 |---|---|
-| **Backend** | Django 5, Django REST Framework, Gunicorn |
-| **Frontend** | React 18, Tailwind CSS, Vite |
-| **AI / RAG** | Google Gemini API, pgvector, custom embedding pipeline |
-| **Database** | PostgreSQL + pgvector extension |
-| **Async** | Celery, Redis, Celery Beat |
-| **Auth** | JWT (djangorestframework-simplejwt) |
-| **Containerisation** | Docker, Docker Compose |
-| **Deployment** | Railway (backend), Netlify (frontend) |
-| **Dev Tools** | Postman, GitHub, python-decouple |
+| 🤖 **Shiro AI** | Gemini-powered assistant with RAG via pgvector for context-aware trip recommendations |
+| ✈️ **My Trips** | Create and manage trips with status tracking (Planned / Ongoing / Completed) |
+| 🗺️ **Destinations** | Browse 500+ destinations by category with AI-curated suggestions |
+| 📅 **Itinerary Builder** | Day-by-day itinerary with activities, times, and location stops |
+| 💰 **Budget Tracker** | Real-time budget tracking with category breakdown and currency converter |
+| 🎒 **Packing Checklist** | Smart packing lists with progress tracking by category |
+| 🔔 **Notifications** | Async notification delivery via Celery + Redis |
+| 🔐 **JWT Auth** | Secure access/refresh token flow (Django SimpleJWT) |
+| 🐳 **Docker Compose** | Full local dev environment with one command |
 
 ---
 
-## Project Structure
+## 🛠️ Tech Stack
+
+### Backend
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![Django](https://img.shields.io/badge/Django-092E20?style=flat-square&logo=django&logoColor=white)
+![DRF](https://img.shields.io/badge/DRF-ff1709?style=flat-square&logo=django&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
+![Celery](https://img.shields.io/badge/Celery-37814A?style=flat-square&logo=celery&logoColor=white)
+![Redis](https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white)
+
+### Frontend
+![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB)
+![Tailwind](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
+
+### Database & AI
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=flat-square&logo=postgresql&logoColor=white)
+![pgvector](https://img.shields.io/badge/pgvector-316192?style=flat-square&logo=postgresql&logoColor=white)
+![Gemini](https://img.shields.io/badge/Google_Gemini-4285F4?style=flat-square&logo=google&logoColor=white)
+
+### DevOps & Deployment
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
+![Railway](https://img.shields.io/badge/Railway-0B0D0E?style=flat-square&logo=railway&logoColor=white)
+![Netlify](https://img.shields.io/badge/Netlify-00C7B7?style=flat-square&logo=netlify&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
+![Postman](https://img.shields.io/badge/Postman-FF6C37?style=flat-square&logo=postman&logoColor=white)
+
+---
+
+## 🤖 How Shiro Works (RAG Pipeline)
+
+```
+User message
+     │
+     ▼
+Embed query  ──────────────────────────  Gemini Embedding Model
+     │
+     ▼
+pgvector similarity search  ──────────  Top-K relevant docs retrieved
+     │
+     ▼
+Prompt builder  ───────────────────────  [System context] + [Retrieved docs] + [User message]
+     │
+     ▼
+Gemini generates response  ────────────  Personalised, context-aware answer
+     │
+     ▼
+Save to shiro_chats  ──────────────────  Conversation history persisted
+```
+
+---
+
+## 📁 Project Structure
 
 ```
 traviqueyou-backend/
@@ -68,19 +149,18 @@ traviqueyou-backend/
 │   ├── urls.py
 │   └── wsgi.py
 ├── apps/
-│   ├── accounts/          # User registration, login, JWT
-│   ├── trips/             # Trip creation and management
-│   ├── shiro/             # AI assistant: RAG engine, embeddings, Gemini client
+│   ├── accounts/          # User auth, JWT, profiles
+│   ├── trips/             # Trip creation & management
+│   ├── shiro/             # RAG engine, embeddings, Gemini client
 │   ├── itinerary/         # Day-by-day itinerary builder
-│   ├── destinations/      # Destination catalogue
+│   ├── destinations/      # Destination catalogue & search
 │   ├── bookings/          # Booking management
-│   ├── reviews/           # Reviews and ratings
+│   ├── reviews/           # Reviews & ratings
 │   ├── payments/          # Payment records
-│   └── notifications/     # Async notification delivery
-├── core/                  # Shared: permissions, pagination, exceptions, utils
-├── celery/                # Celery config and beat schedule
+│   └── notifications/     # Async notifications
+├── core/                  # Shared: permissions, pagination, exceptions
+├── celery/                # Celery config & beat schedule
 ├── tests/
-├── manage.py
 ├── Dockerfile
 ├── docker-compose.yml
 └── requirements.txt
@@ -89,11 +169,11 @@ traviqueyou-frontend/
 ├── src/
 │   ├── components/
 │   │   ├── ui/            # Button, Card, Modal, Input
-│   │   ├── layout/        # Navbar, Footer, Sidebar
+│   │   ├── layout/        # Navbar, Sidebar, Footer
 │   │   └── shiro/         # AI chat widget
-│   ├── pages/             # Home, Explore, TripDetail, Itinerary, Profile, Bookings
+│   ├── pages/             # Dashboard, Trips, Destinations, Itinerary, Budget, Shiro, Packing
 │   ├── hooks/             # useAuth, useTrips, useShiro
-│   ├── services/          # API layer: api.js, auth.js, shiro.js
+│   ├── services/          # api.js, auth.js, shiro.js
 │   ├── store/             # State management
 │   └── utils/
 ├── tailwind.config.js
@@ -102,43 +182,20 @@ traviqueyou-frontend/
 
 ---
 
-## Database Schema (12 tables)
+## 🗃️ Database Schema (12 tables)
 
 `users` · `profiles` · `destinations` · `trips` · `itinerary_days` · `bookings` · `reviews` · `payments` · `notifications` · `shiro_chats` · `embeddings` · `tags`
 
 ---
 
-## How Shiro Works (RAG Pipeline)
-
-```
-User message
-     │
-     ▼
-Embed query (Gemini embedding model)
-     │
-     ▼
-pgvector similarity search → retrieve top-K relevant documents
-     │
-     ▼
-Build prompt: [system context] + [retrieved docs] + [user message]
-     │
-     ▼
-Gemini generates personalised response
-     │
-     ▼
-Response + conversation saved to shiro_chats
-```
-
----
-
-## Getting Started
+## 🚀 Getting Started
 
 ### Prerequisites
 
 - Python 3.11+
 - Node.js 18+
 - Docker & Docker Compose
-- PostgreSQL with pgvector extension (or use Docker Compose — included)
+- Google Gemini API key
 
 ### 1. Clone the repo
 
@@ -147,43 +204,39 @@ git clone https://github.com/monikanimmana/traviqueyou.git
 cd traviqueyou
 ```
 
-### 2. Backend setup
+### 2. Backend — with Docker (recommended)
 
 ```bash
 cd traviqueyou-backend
 cp .env.example .env
-# Fill in your values: SECRET_KEY, DATABASE_URL, GEMINI_API_KEY, REDIS_URL
-```
+# Fill in: SECRET_KEY, DATABASE_URL, GEMINI_API_KEY, REDIS_URL
 
-**With Docker Compose (recommended):**
-
-```bash
 docker-compose up --build
 ```
 
 This starts: Django API · PostgreSQL + pgvector · Redis · Celery worker · Celery Beat
 
-**Without Docker:**
+### 3. Backend — without Docker
 
 ```bash
 python -m venv venv
-source venv/bin/activate
+source venv/bin/activate        # Windows: venv\Scripts\activate
 pip install -r requirements.txt
 python manage.py migrate
 python manage.py runserver
 ```
 
-### 3. Frontend setup
+### 4. Frontend
 
 ```bash
 cd traviqueyou-frontend
 npm install
 cp .env.example .env.local
-# Set VITE_API_URL=http://localhost:8000
+# Set: VITE_API_URL=http://localhost:8000
 npm run dev
 ```
 
-### 4. Run Celery (if not using Docker)
+### 5. Celery (if not using Docker)
 
 ```bash
 celery -A config worker --loglevel=info
@@ -192,7 +245,7 @@ celery -A config beat --loglevel=info
 
 ---
 
-## Environment Variables
+## 🔑 Environment Variables
 
 ```env
 # Django
@@ -216,14 +269,14 @@ REFRESH_TOKEN_LIFETIME=7        # days
 
 ---
 
-## API Documentation
+## 📡 API Documentation
 
 Base URL: `https://your-railway-url.up.railway.app/api/`
 
 | Endpoint | Method | Description |
 |---|---|---|
 | `/auth/register/` | POST | User registration |
-| `/auth/login/` | POST | JWT token obtain |
+| `/auth/login/` | POST | Obtain JWT tokens |
 | `/auth/refresh/` | POST | Refresh access token |
 | `/trips/` | GET, POST | List / create trips |
 | `/trips/<id>/` | GET, PUT, DELETE | Trip detail |
@@ -238,37 +291,46 @@ Base URL: `https://your-railway-url.up.railway.app/api/`
 
 ---
 
-## Deployment
+## ☁️ Deployment
 
 | Service | Platform | Notes |
 |---|---|---|
 | Django API | Railway | `Procfile`: `web: gunicorn config.wsgi` |
-| PostgreSQL | Railway | pgvector extension enabled |
+| PostgreSQL + pgvector | Railway | pgvector extension enabled |
 | Redis | Railway | Shared instance for cache + Celery |
 | React Frontend | Netlify | Build: `npm run build`, publish: `dist/` |
 
 ---
 
-## What I Learned
+## 🧠 What I Learned
 
-- Designing and implementing a full RAG pipeline from scratch (embedding → vector search → prompt construction → LLM response)
+- Designing and implementing a full RAG pipeline from scratch — embedding → vector search → prompt construction → LLM response
 - Managing async task queues with Celery + Redis across multiple worker types
 - Structuring a production-grade Django project with environment-split settings and DRF serializers
 - Containerising a multi-service backend with Docker Compose
 - Building a React frontend with a clean service layer and custom hooks
+- Solo ownership of the complete product lifecycle: design → build → integrate AI → deploy
 
 ---
 
-## Author
+## 👩‍💻 Author
 
 **Monika Nimmana**
-Final-year B.Tech CSE · Parul University, Vadodara
+*Final-year B.Tech CSE · Parul University, Vadodara*
 
-[![GitHub](https://img.shields.io/badge/GitHub-monikanimmana-181717?style=flat-square&logo=github)](https://github.com/monikanimmana)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-monika--nimmana-0A66C2?style=flat-square&logo=linkedin)](https://linkedin.com/in/monika-nimmana)
+[![GitHub](https://img.shields.io/badge/GitHub-monikanimmana-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/monikanimmana)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-monika--nimmana-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/monika-nimmana)
 
 ---
 
-## License
+## 📄 License
 
 This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
+
+---
+
+<div align="center">
+
+*If this project helped you or you found it interesting, consider giving it a ⭐*
+
+</div>
