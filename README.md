@@ -36,25 +36,32 @@
 ## 📸 Screenshots
 
 ### Dashboard
-![Dashboard](screenshot_dashboard.png)
+<img width="959" height="508" alt="screenshot_dashboard" src="https://github.com/user-attachments/assets/6003dd59-b5fe-4316-8bdf-f7e243d115c0" />
+
 
 ### My Trips
-![My Trips](screenshot_mytrips.png)
+<img width="1915" height="1009" alt="image" src="https://github.com/user-attachments/assets/35b9434f-3bc8-4279-8c21-5128ef76bc3a" />
+
 
 ### Destinations — Explore the World
-![Destinations](screenshot_destinations.png)
+<img width="1501" height="925" alt="image" src="https://github.com/user-attachments/assets/a6a9487a-4aed-4373-af7b-66849a90424b" />
+
 
 ### Itinerary Builder
-![Itinerary](screenshot_itinerary.png)
+<img width="1489" height="933" alt="image" src="https://github.com/user-attachments/assets/b54e4873-9d7a-4b82-b8b6-1960cc99eaae" />
+
 
 ### Budget Tracker
-![Budget](screenshot_budget.png)
+<img width="1435" height="922" alt="image" src="https://github.com/user-attachments/assets/9664d0c8-46fb-4a45-93a1-7898bf243c6f" />
+
 
 ### Shiro — AI Travel Companion
-![Shiro AI](screenshot_shiro.png)
+<img width="719" height="461" alt="screenshot_shiro" src="https://github.com/user-attachments/assets/8321868d-8d72-406f-91ce-8c420424db5f" />
+
 
 ### Packing Checklist
-![Packing](screenshot_packing.png)
+<img width="1464" height="745" alt="image" src="https://github.com/user-attachments/assets/cf7d9d7b-97e3-4655-b98a-ed9ea648b7b2" />
+
 
 ---
 
