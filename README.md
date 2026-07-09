@@ -27,7 +27,7 @@
 
 <br/>
 
-[🚀 Live Demo]( https://shiro-dream-planner.lovable.app) &nbsp;·&nbsp; [📖 API Docs](#api-documentation) &nbsp;·&nbsp; [🐛 Report Bug](https://github.com/monikanimmana/traviqueyou/issues) &nbsp;·&nbsp; [💡 Request Feature](https://github.com/monikanimmana/traviqueyou/issues)
+[🚀 Live Demo](https://shiro-dream-planner.lovable.app) &nbsp;·&nbsp; [📖 API Docs](#api-documentation) &nbsp;·&nbsp; [🐛 Report Bug](https://github.com/monikanimmana/traviqueyou/issues) &nbsp;·&nbsp; [💡 Request Feature](https://github.com/monikanimmana/traviqueyou/issues)
 
 </div>
 
